@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* Reset del sitio */
+* {
+  margin: 0rem;
+  padding: 0rem;
+  -webkit-box-sizing: 0rem;
+          box-sizing: 0rem;
+}
+
+/*  Bucle  */
+.productoSize-1 {
+  width: 2em;
+}
+
+.productoSize-2 {
+  width: 4em;
+}
+
+.productoSize-3 {
+  width: 6em;
+}
+
+/*  Each  */
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+/* Maps */
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Mixin */
+.boxMapa {
+  height: 300px;
+  width: 450px;
+}
+
+/* Clases de la página */
+.header .img__bar {
+  display: block;
+}
+
+.header .nav__bar {
+  margin: 1;
+}
+
+.body__section {
+  padding: 1rem;
+  border: 1rem;
+}
+
+.body__section-cards {
+  color: blue;
+  background-color: white;
+}
+
+.body__p {
+  color: black;
+}
+
+.footer__div {
+  color: black;
+}
+
+.ingenieria-body__h1 {
+  color: black;
+}
+
+.servicios-body__h1 {
+  color: black;
+}
+
+.productos-body__h1 {
+  color: black;
+}
+
+.contacto-body__h1 {
+  color: black;
+}
+/*# sourceMappingURL=styles.css.map */

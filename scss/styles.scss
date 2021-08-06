@@ -1,0 +1,115 @@
+
+$color-primario: blue;
+$color-secundario: white;
+$color-terciario: black;
+$size: 2;
+
+
+/* Reset del sitio */
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: 0rem;
+} 
+
+/*  Bucle  */
+@for $i from 1 to 4 {
+.productoSize-#{$i}{width:2em * $i;}
+}
+
+
+/*  Each  */
+$espacios: (1,2,3,4,5);
+
+@each $espacio in $espacios{
+    .m-#{$espacio} {
+        margin: #{$espacio}rem;
+    }
+    .my-#{$espacio}{
+        margin: #{$espacio}rem 0;
+    }
+    .p-#{$espacio} {
+        padding: #{$espacio}rem;
+    }
+    .py-#{$espacio}{
+        padding: #{$espacio}rem 0;
+    }
+}
+
+
+/* Maps */
+$font-weights:(
+    "regular": 400,
+    "medium": 500,
+    "bold": 700    
+    );
+@each $peso, $valor in $font-weights{
+.font-#{$peso}{font-weight: $valor;}
+
+}
+
+
+/* Mixin */
+
+@mixin sizes($width, $height){
+height: $height;
+width: $width;
+}
+
+.boxMapa{ 
+    @include sizes(450px, 300px);
+}
+
+
+
+/* Clases de la página */
+
+.header{
+    .img__bar{
+        display: block;
+    }
+    .nav__bar{
+        margin: $size/2;
+    }
+}
+
+.body{
+    &__section{
+            padding: 1rem;
+            border: 1rem;
+    }
+    &__section-cards{ 
+        color: $color-primario;
+        background-color: $color-secundario;
+        
+    }
+    &__p{
+        color: $color-terciario;
+    }
+}
+
+.footer{
+    &__div{color: $color-terciario;
+    }
+}
+
+.ingenieria-body{
+    &__h1{color: $color-terciario;
+    }
+}
+
+.servicios-body{
+    &__h1{color: $color-terciario;
+    }
+}
+
+.productos-body{
+    &__h1{color: $color-terciario;
+    }
+}
+
+.contacto-body{
+    &__h1{color: $color-terciario;
+    }
+}
+
